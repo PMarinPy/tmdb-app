@@ -1,7 +1,5 @@
 import axios from 'axios';
-import { auto } from './components/AutocompleteList.jsx';
-//import Home from './pages/HomePage.jsx'
-import SearchComponent from './components/SearchParaps.jsx';
+import { auto } from './components/AutocompleteList';
 
 const TMDB_API_KEY = 'b5b91c2866b54acc6e2e9a47c7e6eea7';
 
@@ -45,6 +43,7 @@ const getMoviesByActor = async () => {
       });
 
       console.log('Películas del actor:', response.data.cast);
+      return response.data.cast; // Devolver las películas
     } else {
       console.log('No se pudo obtener el ID del actor');
       return null;
@@ -55,12 +54,4 @@ const getMoviesByActor = async () => {
   }
 };
 
-const App = (() => {
-  return(
-    <SearchComponent></SearchComponent>
-  )
-});
-
-export default App;
-
-
+export default getMoviesByActor;

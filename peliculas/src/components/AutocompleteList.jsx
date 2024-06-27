@@ -1,1 +1,2 @@
-export const auto = "Tom Cruise"
+const Auto = "In";
+export default Auto;
