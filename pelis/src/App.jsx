@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { auto } from './components/AutocompleteList';
 
 const TMDB_API_KEY = 'b5b91c2866b54acc6e2e9a47c7e6eea7';
 
@@ -8,7 +9,7 @@ const getActorId = async () => {
     const response = await axios.get('https://api.themoviedb.org/3/search/person', {
       params: {
         api_key: TMDB_API_KEY,
-        query: 'Tom Cruise',
+        query: auto,
       },
     });
 
