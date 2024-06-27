@@ -1,0 +1,103 @@
+.container{
+    margin: 0 150px 0 150px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+.container header {
+    display: flex;
+    align-items: center;
+    background-color:#262A2E;
+    justify-content: space-between;
+}
+
+.container header .logo {
+    border: 10px solid;
+    margin-left:  80px;
+    width: 60px;
+    height: 60px;
+   
+
+}
+
+.container header input{
+    margin-left: 8px;
+    color: black;
+    background-color: white;
+    text-align: center;
+    width: 500px;
+    height: 40px;
+}
+
+.container header p {
+    margin: 10px 10px; /* Espacio entre los párrafos */
+    padding: 40px 40px 40px 20px;
+    background-color: #262A2E;
+    font-size: 25px;
+}
+
+.top-pelis{
+    display: flex;
+    padding: 100px 0 50px 50px;
+
+}
+
+
+.peliculas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-column-gap: 20px;
+
+}
+ 
+.series{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-column-gap: 20px;
+
+}
+.imagen1,
+.imagen2,
+.imagen3,
+.imagen4{
+    
+    width: auto;
+    height: 500px;
+   background-color: blueviolet;
+   border: 2px solid;
+   border-color: aqua;
+   
+  
+ }
+
+ .top-series{
+    display: flex;
+    padding: 100px 0 50px 50px;
+
+}
+
+
+.top-actores{
+    display: flex;
+    padding: 100px 0 50px 50px;
+}
+
+.actores{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-column-gap: 20px;
+  
+
+}
+
+.imagen5,
+.imagen6,
+.imagen7,
+.imagen8{
+    
+    width: auto;
+    height: 300px;
+   background-color: blueviolet;
+   border-radius: 100%;
+   border-color: aqua;
+}
+  
