@@ -16,14 +16,14 @@ const getActorId = async () => {
     // Verificar si se encontró algún resultado
     if (response.data.results.length > 0) {
       // Tomar el primer resultado (suponiendo que sea el correcto)
-      const bruceWillisId = response.data.results[0].id;
-      return bruceWillisId;
+      const actorId = response.data.results[0].id;
+      return actorId;
     } else {
-      console.log('No se encontró ningún resultado para Bruce Willis');
+      console.log('No se encontró ningún resultado para el actor');
       return null;
     }
   } catch (error) {
-    console.error('Error al buscar el ID de Bruce Willis:', error);
+    console.error('Error al buscar el ID del actor:', error);
     return null;
   }
 };
@@ -42,14 +42,14 @@ const getMoviesByActor = async () => {
         },
       });
 
-      console.log('Películas de Bruce Willis:', response.data.cast);
+      console.log('Películas del actor:', response.data.cast);
       return response.data.cast; // Devolver las películas
     } else {
-      console.log('No se pudo obtener el ID de Bruce Willis');
+      console.log('No se pudo obtener el ID del actor');
       return null;
     }
   } catch (error) {
-    console.error('Error al obtener las películas de Bruce Willis:', error);
+    console.error('Error al obtener las películas del actor:', error);
     return null;
   }
 };
