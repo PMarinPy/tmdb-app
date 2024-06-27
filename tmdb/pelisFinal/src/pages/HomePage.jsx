@@ -11,7 +11,7 @@ function HomePage() {
         <header>
            <div className="logo"></div>
            
-            <input type="text" placeholder="buscar.." />
+            <SearchComponent></SearchComponent>
             
             <p>iniciar sesion</p>
             <p>ES</p>
