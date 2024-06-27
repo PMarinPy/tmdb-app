@@ -1,10 +1,10 @@
-import getMoviesByActor from "./components/MoviesActor";
-import getMoviesByName from "./components/MoviesName";
+//import getMoviesByActor from "./components/MoviesActor";
+import SearchComponent from "./components/FilterResults";
 
 const App = () => {
-    getMoviesByActor()
-    getMoviesByName()
-  
+    return(
+      <SearchComponent />
+    )
 }
 
 export default App;
