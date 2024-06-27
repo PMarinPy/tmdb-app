@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { auto } from './components/AutocompleteList';
+import SearchComponent from './components/SearchParaps.jsx';
 
 const TMDB_API_KEY = 'b5b91c2866b54acc6e2e9a47c7e6eea7';
 
@@ -53,5 +54,10 @@ const getMoviesByActor = async () => {
     return null;
   }
 };
+function App(){
+  return (
+    <SearchComponent></SearchComponent>
+  )
+}
 
-export default getMoviesByActor;
+export default App;
