@@ -15,5 +15,29 @@ INFORMACIÓN DE LA PELICULA
 
 BUSQUEDA GENERAL
 -HABILITADO CUANDO EN EL INPUT NO SE SELECCIONA UNA PELICULA
+PROPUESTA ----------------
+assets/: Carpeta para imágenes, estilos y otros activos.
 
+components/: Carpeta para componentes reutilizables.
+Header.jsx: Componente para el encabezado de la aplicación.
+SearchBar.jsx: Componente para el buscador.
+AutocompleteList.jsx: Componente para la lista de autocompletado del buscador.
+MovieCard.jsx: Componente para mostrar una tarjeta de película.
+SeriesCard.jsx: Componente para mostrar una tarjeta de serie.
+ActorCard.jsx: Componente para mostrar una tarjeta de actor.
+Pagination.jsx: Componente para la paginación de resultados de búsqueda.
+Footer.jsx: Componente para el pie de página.
+
+
+pages/: Carpeta para las páginas principales de la aplicación.
+HomePage.jsx: Página principal con divisiones de películas, series y actores, y el buscador.
+SearchResultsPage.jsx: Página para mostrar los resultados de búsqueda.
+MovieDetailsPage.jsx: Página para mostrar los detalles de una película.
+SeriesDetailsPage.jsx: Página para mostrar los detalles de una serie.
+
+
+hooks/: Carpeta para hooks personalizados.
+useFetchMovies.js: Hook para obtener datos de películas.
+useFetchSeries.js: Hook para obtener datos de series.
+useSearch.js: Hook para manejar la lógica de búsqueda y autocompletado.
 
